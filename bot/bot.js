@@ -21,7 +21,7 @@ const moment = require('moment');
 const telegramApi = require('node-telegram-bot-api');
 
 //Сюда нужно ввести токен бота
-const token = process.env.BOTTOKEN
+const token = process.env.BOTTOKEN || '2014800375:AAEiog73vifgpxYI4Igs2OzJ6UQlDV-1X8I'
 
 const bot = new telegramApi(token, {polling: true});
 
