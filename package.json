@@ -1,17 +1,25 @@
 {
-  "name": "khuratelebot",
+  "name": "backend_node",
   "version": "1.0.0",
-  "description": "",
+  "description": "telBot",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
-  },
-  "engines": {
-    "node": "14.17.5"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "db_migrate": "node ./migrations/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-telegram-bot-api": "^0.54.0"
+    "dotenv": "^10.0.0",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.9",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.0",
+    "node-telegram-bot-api": "^0.54.0",
+    "yargs": "^17.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
   }
 }
